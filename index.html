@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medical Fun Facts Playground 🧬</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🩺 Welcome to the Medical Fun Zone! 🧠</h1>
+
+  <!-- Button Section -->
+  <section class="button-section">
+    <button id="factButton">Reveal a Fun Medical Fact!</button>
+  </section>
+
+  <!-- Image Slideshow Section -->
+<section class="gallery-section">
+    <h2>🖼️ Anatomy Gallery</h2>
+    <img id="galleryImage" src="images/image1.jpg" alt="Medical Image">
+    <div class="gallery-controls">
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </section>
+  
+
+  <!-- Tabs Section -->
+  <section class="tabs-section">
+    <h2>🧪 Learn More</h2>
+    <div class="tabs">
+      <button class="tablink" data-tab="anatomy">Anatomy</button>
+      <button class="tablink" data-tab="pharma">Pharmacology</button>
+      <button class="tablink" data-tab="pathology">Pathology</button>
+    </div>
+    <div id="anatomy" class="tabcontent">Did you know the human small intestine is about 6 meters long?</div>
+    <div id="pharma" class="tabcontent">Aspirin was first derived from willow bark!</div>
+    <div id="pathology" class="tabcontent">Cancer cells can divide uncontrollably due to DNA mutations.</div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="form-section">
+    <h2>📋 Medical Newsletter Signup</h2>
+    <form id="signupForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+      <input type="password" id="password" placeholder="Password (min 8 characters)" required>
+      <button type="submit">Subscribe</button>
+      <p id="formFeedback"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<footer>
+    <p>© Bethwel 2025. All rights reserved.</p>
+  </footer>
+</body>
+</html>
